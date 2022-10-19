@@ -1,2 +1,2 @@
-# testing0-github
+# Web Movie-github
 Group 7 Web Movie
