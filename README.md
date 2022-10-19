@@ -1,2 +1,2 @@
-# Web Movie-github
-Group 7 Web Movie
+# Web Dev
+Web Dev educational purposes only
