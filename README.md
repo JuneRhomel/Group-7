@@ -1,2 +1,2 @@
-# testing0-github
- Testing only
+# Web Dev
+Web Dev educational purposes only

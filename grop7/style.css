@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    color: var(--text-color);
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+:root {
+    --bg-color: #192026;
+    --heder-color: rgba(0, 0, 0, 0.4);
+    --footer-color: #1A1A1A;
+    
+    --text-color: #FFFFFF;
+}
+body {
+    background-color: var(--bg-color);
+}
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+button {
+    cursor: pointer;
+}
+section {
+    padding: 2em 0;
+}
+h2 {
+    margin-bottom: 1em;
+    font-size: 2.2em;
+}
+/* navigation */
+
+/* hero section */
+header {
+    backdrop-filter: blur(2.35589px);
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .menu {
+    display: flex;
+    gap: 3em;
+}
+header .logo {
+    width: 8em;
+}
+
+.hero-section {
+    height: 100vh;
+    position: relative;
+}
+.hero-section .bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    z-index: -1;
+    
+}
+.hero-section .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+.hero-section .container h1 {
+    font-size: 6em;
+    font-weight: 700;
+}
+.hero-section .container p {
+    font-size: 1.2em;
+}
+
+.hero-section .container .rating {
+    margin-top: 1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.4em;
+}
+.hero-section .container button {
+    margin-top: 1em;
+    width: 10em;
+    height: 2em;
+    background: #ff0000a8;
+    border: 1px solid #ff0000;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    gap: .6em;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2em;
+    transition: 0.5s ease-in-out;
+}
+.hero-section .container button:hover {
+    background: rgba(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+    transition: 0.5s all;
+}
+/* end hero section */
+
+/*trending */
+
+.movie-trending .card-trending{
+    position: relative;
+    width: 50em;
+    height: 25em;
+    overflow: hidden;
+}
+.movie-trending {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+.movie-trending .card-trending .trending-bg {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+    
+}
+.movie-trending .card-trending:hover .trending-bg {
+    z-index: -1;
+    transform: scale(2);
+    transition: .5s all;
+}
+.movie-trending .card-trending .text-trending {
+    background-color: #282c35a8;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 3em;
+    gap: .8em;
+    transition: 0.5s ease-in-out;
+}
+.text-trending h3 {
+    font-size: 4em;
+}
+.text-trending p {
+    font-size: 1em;
+}
+.text-trending .wish input {
+    margin-right: .5em;
+}
+.text-trending .btn button {
+    width: 10em;
+    height: 2em;
+    background-color: #ff0000a8;
+    border: none;
+    border-radius: 1em;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+/*end trending */
+
+/* all list moive */
+
+.card {
+    position: relative;
+    max-width: 25em;
+    height: 33em;
+    overflow: hidden;
+    flex: 1 0 20em;
+}
+.card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+.card:hover img {
+    transform: scale(1.2);
+    transition: .5s all;
+}
+.card .text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:  #282c35a8;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+    padding: 1em;
+}
+.card:hover .text {
+    z-index: 1;
+    transition: .5s all;
+}
+.card .text h3 {
+    font-size: 3em;
+    margin-bottom: .3em;
+}
+.card .text p {
+    font-size: .9em;
+}
+.card .text .btn {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    width: 100%;
+}
+.card .text .btn button {
+    width: 10em;
+    height: 2em;
+    background-color: #ff0000a8;
+    border: none;
+    font-size: 1.3em;
+    border-radius: 1em;
+    font-weight: 700;
+}
+
+.list-moive {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+/* End all list moive */
+/* footer */
+footer {
+    background-color: #1A1A1A;
+    padding: 1em 0;
+}
+footer .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .container .social p{
+    margin-bottom: 1em;
+}
+.footer-socail {
+    display: flex;
+    gap: 2em;
+}
+.copy {
+    text-align: start;
+    background-color: #1A1A1A;
+    font-size: .7em;
+}
+.logo-footer img {
+    width: 13em;
+}
+.navigation-footer nav ul li {
+    margin-bottom: 1.2em;
+
+}
+/* end footer */
